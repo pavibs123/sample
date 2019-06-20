@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color:darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:gray;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:rgb(55, 126, 128);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(46, 111, 113);
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px darkblue(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content .header {
+  background: rgb(46, 111, 113);
+  padding: 0px;
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 13px;
+  background-color;
+  height: 200px;
+}
+.column a {
+  float: none;
+  color: rgb(13, 13, 86);
+  padding: 7px;
+  text-decoration: none;
+  
+  text-align: right;
+}
+.column a:hover {
+  background-color:;
+}
+/* Clear floats after the columns */
+.row:after {
+  
+  display: table;
+  clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+#t1{
+        
+        background-color:rgb(4, 4, 78);
+        color: white;
+        nav-right: auto;
+      }
+      #f{
+        align-self: center;
+        background-color: black;
+        text-decoration-color: aliceblue;
+      }
+      #m1{
+        margin-left: 3px ;
+        margin-right: 2%;
+        -webkit-margin-top-collapse: collapse;
+        margin-bottom: 0%;
+        
+     
+        block-size: 600px;
+      }
+      #m2
+      {
+        margin-right:4%;
+        margin-top: 60px;
+        margin-left: 80%;
+        
+      }
+      .button {
+   /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {width: 150px;
+border: solid white;
+background-color: rgb(46, 111, 113)}
+.button2 {width: 150px;
+background-color: red}
+.button3 {width: 200px;
+background-color: red}
+.v1 {
+  border-left: 2px solid wheat;
+  height: 125px;
+  position: absolute;
+  left: 33%;
+  margin-left: -3px;
+  margin-top: 3%;
+  margin-bottom: 0;
+}
+.v2 {
+  border-left: 2px solid wheat;
+  height: 125px;
+  position: absolute;
+  left: 66%;
+  margin-left: -3px;
+  margin-top: 3%;
+  margin-bottom: 0;
+}
+</style>
+</head>
+<body background="ecomerceimage.jpg">
+   <div class="container">
+     <div>
+      <nav class="navbar navbar-inverse" style="background-color: black;behavior: unset">
+        <div class="container-fluid bg-1">
+
+          <ul class="nav navbar-nav navbar-right" >
+            <a href="#">I am looking to hire</a>
+            <a href="#" style="backgroung-color:grey">I am looking for a job</a>
+
+          </ul>
+        </div>
+        </nav>
+     </div>
+              <div class="navbar">
+                <div class="row">
+                    <div class="col-sm-6">
+                  
+                      
+                          <h1 style="text-align: left;margin-top: 10px;margin-bottom: 0%;color: white">Employee.in</h1>
+                    
+                    </div> 
+                    <div class="col-sm-6">
+
+                      <div id='t1'>
+                          
+                          
+                         <a href='#'><i class="fa fa-fw fa-user"></i></a>
+                        <a href="#home"><h4 style="color: white;margin-top: 0px">employers</h4></a>
+                
+                          <div class="dropdown">
+                                <button class="dropbtn" ><h4 style="color: white;margin-top: 0px">candidates</h4>
+                  
+                                </button>
+                            <div class="dropdown-content">
+                      
+                              <div class="row">
+                      
+                                  <div class="column" style="border-right-color:darkblue">
+                                    <h3 style="text-align: center;color: white">Candidates</h3>
+                                      <p style="text-align: center">
+                                        start applying instantly
+                                    </p>
+                                  </div>
+                      
+                                  <div class="v1"></div>
+                      
+                                    <div class="column" style="border-right-color: darkblue;color: white">
+                                    <h3>get started</h3>
+                                          <ul style="color: white">
+                                            <li>
+                                              
+                                              <a style="color: white">job search</a>
+                                            </li>
+                                            <li>
+                                              <a style="color: white">company search</a>
+                                            </li>
+                                            <li>
+                                              <a style="color: white">create your cv</a>
+                                            </li>
+                                            <li>
+                                              <a style="color: white">
+                                                how it works
+                                              </a>
+                                            </li>
+                                          </ul>
+                            
+                                    </div>
+                                      <div class="v2"></div>
+                                    <div class="column text-align:center">
+                          
+                                        <h3>find a job</h3>
+                                        <button class="button button1">Log in</button><br>
+                                        <button class="button button2">Register</button>
+                                      
+                                      </div>
+                                  </div>
+                                </div>
+                    
+                            </div>
+                          <a href="#home"><h4 style="color: white;margin-top: 0px">find job</h4></a>
+                          
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+
+      </div>
+
+        <div id="m2" style="background-color: white;width: 280px;height: 350px">
+            <br>
+            <br>
+            
+            
+            <div style="padding: 14%">
+              <form class="form-horizontal" action="/action_page.php">
+                <div class="form-group-lg">
+                <div class="row" style="width: 15%;height:3%"> 
+                  <div class="col-sm-12">          
+                    <input type="name" class="form-control" id="pwd" placeholder="Enter name" name="pwd">
+                  </div>
+                  <br>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="email"></label>
+                  <div class="col-sm-12">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                </div>
+                <br>
+              <div class="form-group">
+                  <label class="control-label col-sm-2" for="pwd"></label>
+                  <div class="col-sm-12">          
+                    <input type="Job" class="form-control" id="pwd" placeholder="Enter job type" name="pwd">
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">        
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="remember"> Remember me</label>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">        
+                  <div class="col-sm-offset-2 col-sm-10" style="color: tomato">
+                    <button type="submit" class="button button3" style="background-color: red;background-size: 20%">find a job now</button>
+                  </div>
+                </div>
+              </form>
+              <br>
+              <br>
+          </div>
+        </div>
+        </div>
+          <p >
+            <h1 style="color:white">
+              Find the career you deserve
+            </h1>
+          </p>
+  `</div>
+
+
+</body>
+</html>
